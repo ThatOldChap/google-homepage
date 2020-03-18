@@ -52,23 +52,52 @@
     }
     .search-section {
         display: flex;
+        flex-grow: 1;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .spacer {
+        flex-grow: 0.42;
     }
     .search-container {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        width: 100%;
     }
-    .google-logo {
-        
+    .search-bar-container {
+        display: flex;
+        width: 100%;
+        align-content: center;
+    }
+    .search-button-container {
+        display: flex;
+        width: inherit;
+        justify-content: center;
     }
     .search-bar {
-       
+        border-radius: 20px;
+        height: 45px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(216, 215, 215);
+        margin: 20px 0 0 10px;
+        width: 40%;
+    }
+    .search-bar-form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
     .search-buttons {
-
+        color: dimgray;
+        background-color: rgb(240, 239, 239);
+        padding: 0.75em;
+        border: 1px solid rgb(240, 239, 239);
+        border-radius: 3px;
+        margin: 25px 4px 0 4px;
     }
     .nav-bottom {
         background-color: #ECEFF1;
@@ -102,6 +131,9 @@
         height: 100%;
         margin: 0;
     }
+    main {
+        display: flex;
+    }
 </style>
 
 <html>
@@ -125,17 +157,18 @@
             </div>
 
             <div class="search-container">
-                <div class="search-bar">
-                    <form>
-                        <input type="search"></input>
+                <div class="search-bar-container">
+                    <form class="search-bar-form">
+                        <input class="search-bar" type="search"></input>
                     </form>
                 </div>
 
-                <div class="search-buttons">
-                    <button>Google Search</button>
-                    <button>I'm Feeling Lucky</button>
+                <div class="search-button-container">
+                    <button class="search-buttons">Google Search</input>
+                    <button class="search-buttons">I'm Feeling Lucky</input>
                 </div>
             </div>
+            <div class="spacer"></div>
         </main>
 
         <div class="nav-bottom">
